@@ -1,1 +1,6 @@
-<p>parent works!</p>
+<div>
+    <label for="inputField">Írj valamit:</label>
+    <input id="inputField" type="text" [(ngModel)]="inputText" placeholder="Írd ide a szöveget...">
+  </div>
+  <p>Az input mező értéke: {{ inputText }}</p>
+  <app-child [childText]="inputText"></app-child>
